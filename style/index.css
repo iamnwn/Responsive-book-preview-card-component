@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #efe7e2;
+    }
+
+.header{
+    text-align: center;
+}
+
+.header h1 {   
+    position: relative;
+    width:60%;
+    font-weight: medium;
+    font-size: 2em;
+    padding:1em 1em;
+    border-radius: 1em;
+    background-color: #f3f3f3;
+    display: inline-block;
+    
+}
+
+.cart-container {
+    width:60%;
+    padding:2.4em 2em .4em 2em;
+    margin:auto auto 2em auto;
+    content: "";
+    border-radius: 2em;
+    background-color: #f3f3f3;
+    height: auto;
+}
+
+.cart {
+    background-color: #ffffff;
+    border-radius: 1.5em;
+    height:auto;
+    width:100%;
+    display:flex;
+    margin-bottom: 2em;
+    justify-content: space-between; 
+}
+
+.book-description {
+    padding:2em;
+}
+
+.author{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.book-title{
+    font-weight: 600;
+    font-size: 1em;
+}
+
+ .publisher{
+    font-weight: 200;
+    padding-bottom: .5em;
+}
+
+ .released {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+ .isbn {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+.img{
+    padding: 2em;
+}
+
+img{
+    height: 15em;
+    width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header h1 {
+        width: 70%;
+    }
+
+    .cart-container {
+        width: 70%;
+    }
+
+    img{
+        height: 12em;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .header h1 {
+        width: 75%;
+    }
+
+    .cart-container {
+        width: 75%;
+    }
+    .book-description {
+        padding:2em 0 2em 2em;
+    }
+
+    img{
+        height: 10em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cart {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img{
+        padding: 2em 2em .5em 2em;
+    }
+
+    .book-description {
+        padding:0 2em 2em 2em;
+    }
+}
